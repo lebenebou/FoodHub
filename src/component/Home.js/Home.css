@@ -1,0 +1,154 @@
+.black{
+    background-color: black;
+}
+.numbers{
+    background-color:#f3bf00;
+    padding:25px 0px;
+    max-width:100%;
+    text-align:center;
+    overflow: hidden;
+}
+.numbers .row{
+    margin:10px 0px;
+}
+.numbers h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0px;
+    color: black;
+    font-family: 'Tajawal', sans-serif;
+
+}
+.numbers h6{
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Tajawal', sans-serif;
+    font-weight:bold ;
+    letter-spacing: 1px;
+}
+
+/*info*/
+.info{
+    background-color: transparent;
+    padding:25px 0px;
+    max-width:100%;
+    margin-top: 60px;
+    overflow: hidden;
+}
+.info img{
+    width:350px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.info h2{
+    font-size: 35px;
+    font-weight: bold;
+    width:80%;
+    margin: 10px 0px;
+    color: #f3bf00;
+    font-family: 'Tajawal', sans-serif;
+    line-height: 50px;
+}
+
+.info p{
+    font-size:16px;
+    line-height:28px;
+    color:rgb(206, 172, 21);
+    font-family: 'Tajawal', sans-serif;
+}
+
+.info button{
+    background-color: #ffd900;
+    border:1px solid #f3bf00;
+    box-sizing: border-box;
+    width:140px;
+    height:40px;
+    text-align:center;
+    margin-top:20px;
+}
+.info button a{
+    display: block;
+    color: black;
+    font-family: 'Tajawal', sans-serif;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.info button:hover {
+    transition: .2s ease;
+    background-color: #d6b12a;
+}
+
+
+.ingredients{
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+.ingredients h2{
+    font-size: 35px;
+    font-weight: bold;
+    width:80%;
+    margin: 10px 0px;
+    color: #f3bf00;
+    font-family: 'Tajawal', sans-serif;
+    line-height: 50px;
+}
+.ingredients ul{
+    padding: 0px;
+}
+.ingredients ul li{
+    list-style-type: square;
+    font-family: 'Tajawal', sans-serif;
+    color:rgb(206, 172, 21);
+    margin-top: 10px;
+   
+}
+#somephotos{
+    margin-left: 50px;
+    width:350px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.ingredients p{
+    font-size:16px;
+    line-height:28px;
+    color:rgb(206, 172, 21);
+    font-family: 'Tajawal', sans-serif;
+}
+
+.ingredients button{
+    background-color: #ffd900;
+    border:1px solid #f3bf00;
+    box-sizing: border-box;
+    width:140px;
+    height:40px;
+    text-align:center;
+    margin-top:20px;
+}
+.ingredients button a{
+    display: block;
+    color: black;
+    font-family: 'Tajawal', sans-serif;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.ingredients button:hover a{
+    color:black;
+    transition: .2s ease;
+}
+.ingredients button:hover{
+    background-color: #d6b12a;
+}
+
+.pad{
+    margin-bottom: 20px;
+}
+
+

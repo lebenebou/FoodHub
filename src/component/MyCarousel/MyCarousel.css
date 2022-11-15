@@ -1,0 +1,20 @@
+.d-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: center;
+    size: cover;
+    height:50%; 
+    opacity: 0.5;  
+     }
+#carousel{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+ 
