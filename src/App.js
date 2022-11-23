@@ -5,10 +5,11 @@ import { Fragment } from 'react';
 import Footer from './component/Footer/Footer';
 import MyCard from './component/Cards/Cards';
 
-// testing git
+
 function App() {
 
   return (
+
     <Fragment>
     <Navs/>
     <Home/>

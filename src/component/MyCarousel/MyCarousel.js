@@ -18,7 +18,7 @@ function MyCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <p id="carousel">One burger won’t make you fat!</p>
+          <p id="carousel">One Burger Won’t Make You Fat!</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -30,7 +30,7 @@ function MyCarousel() {
         />
 
         <Carousel.Caption>
-          
+        <p id="carousel">The Diet Starts On Monday</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -42,7 +42,7 @@ function MyCarousel() {
         />
 
         <Carousel.Caption>
-          
+        <p id="carousel">Say Yes To Food!</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -54,7 +54,7 @@ function MyCarousel() {
         />
 
         <Carousel.Caption>
-          
+        <p id="carousel">Why Not!</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

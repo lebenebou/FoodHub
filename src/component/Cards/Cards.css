@@ -24,7 +24,6 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    ;
   }
   
   .flip-box:hover .flip-box-inner {
@@ -39,12 +38,15 @@
     backface-visibility: hidden;
   }
 
-
+.img{
+  opacity: 0.9;
+}
   
   .flip-box-front {
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 20px;
     color: black;
   }
   
@@ -52,5 +54,6 @@
     background-color: #ffd900;
     border: 1px solid black;
     color: black;
+    border-radius: 20px;
     transform: rotateX(180deg);
   }

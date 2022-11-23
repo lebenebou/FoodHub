@@ -1,8 +1,8 @@
 import React from "react";
 import './Cards.css';
-import im1 from './../../image/penaut.jpeg';
-import im2 from './../../image/salmon.jpeg';
-import im3 from './../../image/potato.jpeg';
+import im1 from './../../image/penaut.png';
+import im2 from './../../image/salmon.png';
+import im3 from './../../image/potato.png';
 
 const MyCard =()=>{
     return(
@@ -19,7 +19,7 @@ const MyCard =()=>{
         <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="flip-box-front">
-                    <img src={im1}/>
+                    <img src={im1} width="250px" height="200px"/>
                     
                 </div>
 
@@ -36,7 +36,7 @@ const MyCard =()=>{
         <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="flip-box-front">
-                <img src={im3} width="300px" height="200px"/>
+                <img src={im3} width="250px" height="200px"/>
 
                 </div>
 
@@ -53,7 +53,7 @@ const MyCard =()=>{
                 <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="flip-box-front">
-                <img src={im2} width="300px" height="200px"/>
+                <img src={im2} width="300px" height="200px"  />
                 </div>
 
                 <div class="flip-box-back">

@@ -5,9 +5,9 @@ import MyCarousel from "../MyCarousel/MyCarousel";
 
 const Header = ()=>{
     return(
-        <section className="black">
+        <section className="black" >
         <header>
-            <div className="container">
+            <div className="container" id="home">
 
                 <div className="Harousel">
                     <MyCarousel className="carousel"/>

@@ -4,12 +4,9 @@ nav{/*lal nav l fo2 bas*/
     max-width: 100%;/*ta mashi ytla3 la bara*/
     border-radius: 0px;
     border-bottom: 1px solid #f3bf00;
-    margin-top: 0px;
-    height: 100px;
-    
+    margin-top: 0px; 
+    height: 100%;
 }
-
-
 
 .cusSticky {
 
@@ -19,9 +16,8 @@ nav{/*lal nav l fo2 bas*/
     }
 
 nav img{
+    margin-left: -100%;
     width:150px;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 
@@ -53,6 +49,13 @@ nav #lastnav{
     margin-left: 10px;    
     
 }
+.logo{
+    text-align: right;
+    /* margin-left: -10%;*/
+    margin-top: 2.5%; 
+    font-weight: bolder;
+    font-family: "Audiowide", sans-serif
+}
 
 .popSign{
     background-color: #ffd900;
@@ -60,7 +63,15 @@ nav #lastnav{
     border-radius: 20px;
     width: 500px;
     height: 450px;
+    margin: 70px auto;
+    position: relative;
+    transition: all 5s ease-in-out;
 }
+
+#log{
+    height: 270px;
+}
+
 .input-box{
     border-radius: 20px;
     padding:10px;
@@ -72,6 +83,11 @@ nav #lastnav{
     margin-left: 5%;
     color: #ffd900;
     
+}
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    filter: invert(100%);
 }
 .signup-btn{
     margin-top: 3%;

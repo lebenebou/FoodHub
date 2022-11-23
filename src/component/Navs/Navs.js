@@ -1,19 +1,19 @@
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Nav.css' ;
-import logo from './../../image/logo.png';
+import { useState } from "react";
+// import logo from './../../image/logo.png';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Popup from "reactjs-popup";
-
 import React, {Component} from "react";
-import "bootstrap/dist/css/bootstrap.min.css"
 import axios from 'axios'
 
 
+
+ 
 function handleSubmit(event){
 
   // event.preventDefault()
@@ -43,21 +43,37 @@ function handleSubmit(event){
 const Navs=()=>{
     return(
       
-<nav class="cusSticky"> 
-    <Navbar bg="red" expand="lg">
+<nav class="cusSticky" > 
+    <Navbar expand="lg" >
       <Container>
-        <a href="https://www.google.com">
-        <img className='logo' src={ logo } title='logo'/>
+        <div className="logo">
+        <a href="#home">
+        {/* <img src={ logo } title='logo'/> */}
+        <h1>FOODHUB</h1>
         </a>
+        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto"> 
             <Nav.Link href="#home" > Home </Nav.Link>
-            <Nav.Link href="#link"  >About Us</Nav.Link>
+            <Nav.Link href="#footer">About Us</Nav.Link>
             <NavDropdown  title="Get Started" id="collasible-nav-dropdown">
-              <NavDropdown.Item  href="#action/3.1">Log in</NavDropdown.Item>
+            
+            <Popup  trigger={ <NavDropdown.Item  href="#action/3.1">Log in</NavDropdown.Item>}>
+            <div className="popSign" id='log'> 
+                    <h1 className="h1s">Your Info</h1>
+                      <form onSubmit={handleSubmit} >
+                        <input className="input-box" id="emi" type="email" placeholder='Email' unique />
+                        <br/>
+                        <input className="input-box" id="pasi" type="password" placeholder='Password'/>
+                        <br/>
+                        
+                        <input className="signup-btn" type="submit" value="Register"/>
+                        </form>
+                    </div>
+            </Popup>
               
-              <Popup trigger={<NavDropdown.Item  href="#action/3.2">Sign up</NavDropdown.Item>} >
+              <Popup  trigger={<NavDropdown.Item  href="#action/3.2">Sign up</NavDropdown.Item>} >
                     <div className="popSign"> 
                     <h1 className="h1s">Your Info</h1>
                       <form onSubmit={handleSubmit} >
@@ -80,6 +96,7 @@ const Navs=()=>{
 
               <NavDropdown.Divider  />
               <NavDropdown.Item  href="#action/3.4">Delete your account</NavDropdown.Item>
+            
             </NavDropdown>
             <NavDropdown  title="Country" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Log in</NavDropdown.Item>
