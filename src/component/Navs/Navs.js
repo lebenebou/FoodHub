@@ -18,7 +18,7 @@ function handleSubmit(event){
 
   // event.preventDefault()
 
-  const valid_inputs=Array.from(document.querySelectorAll("input")).flter(i=>i.value!=="");
+  const valid_inputs=Array.from(document.querySelectorAll("input")).filter(i=>i.value!=="");
   
   if(valid_inputs.length!==6){
       alert("Please Fill All Fields.")
