@@ -14,10 +14,6 @@ router.post('/signup', async (request, response) => {
     const salted_pass = await(bcrypt.genSalt(9))
     const hashed_pass = await(bcrypt.hash(request.body.password, salted_pass))
 
-    // const oldUser=await singed_up_user.findOne({email});
-    // if(oldUser){
-    //     return response.send({error:"User exist"});
-    // }
     const singed_up_user = new SignUpTemplateCopy({
 
         first_name: request.body.first_name,

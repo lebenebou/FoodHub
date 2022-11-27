@@ -21,6 +21,7 @@ function handleSubmit(event){
       alert("Please Fill All Fields.")
       return;
   }
+
   const register_info = {
 
     first_name: document.getElementById("fni").value ,
@@ -29,11 +30,20 @@ function handleSubmit(event){
     username: document.getElementById("ui").value,
     password: document.getElementById("pasi").value
   }
-  axios.post('http://localhost:4000/app/signup', register_info)
-  .then(res => console.log(res.data))
 
-  alert("Welcome "+document.getElementById("fni").value+", your registration is completed!")
-  window.location('http://localhost:3000/');
+
+  axios.post('http://localhost:4000/app/signup', register_info)
+  .then(res => {
+
+    if(Object.keys(res.data).length == 4){
+      alert("This email already exists!");
+    }
+    else{
+      alert("Welcome "+document.getElementById("fni").value+", your registration is completed!");
+    }
+  }
+    )
+
 }
 
 
