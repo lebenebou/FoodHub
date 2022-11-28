@@ -1,3 +1,4 @@
+
 nav{/*lal nav l fo2 bas*/
     background-color: #ffd900 ;
     width:100%;
@@ -5,7 +6,7 @@ nav{/*lal nav l fo2 bas*/
     border-radius: 0px;
     border-bottom: 1px solid #f3bf00;
     margin-top: 0px; 
-    height: 100%;
+    height: 75px;
 }
 
 .cusSticky {
@@ -15,19 +16,21 @@ nav{/*lal nav l fo2 bas*/
     z-index: 999;
     }
 
+
 nav img{
     margin-left: -100%;
     width:150px;
 }
-
 
 nav a{/*nav link*/
     color: black !important /*ta yekhdo la lon*/;
     font-size:15px ;
     letter-spacing: 1px;
     font-weight: bold;
-    margin-right: 50px;
-    
+    margin-right: 50px; 
+}
+nav a:hover{
+    text-decoration: none;
 }
 
 nav input{
@@ -102,8 +105,3 @@ input[type=password]::-ms-clear
 .ppop{
     text-align: center;
 }
-
-
-
-
-

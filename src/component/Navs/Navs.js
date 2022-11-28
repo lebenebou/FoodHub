@@ -52,12 +52,12 @@ const Navs=()=>{
     return(
       
 <nav class="cusSticky" > 
-    <Navbar expand="lg" >
+    <Navbar  expand="lg" >
       <Container>
         <div className="logo">
         <a href="#home">
         {/* <img src={ logo } title='logo'/> */}
-        <h1>FOODHUB</h1>
+        <h1>FoodHub</h1>
         </a>
         </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -106,14 +106,13 @@ const Navs=()=>{
               <NavDropdown.Item  href="#action/3.4">Delete your account</NavDropdown.Item>
             
             </NavDropdown>
-            <NavDropdown  title="Country" id="collasible-nav-dropdown">
+            {/* <NavDropdown  title="Country" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Log in</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Sign up</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Delete your account</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
             </Nav>
-            
             
             <Nav >
             <input type="search"  placeholder="What Are You Craving?"/>
