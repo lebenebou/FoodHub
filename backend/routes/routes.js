@@ -4,10 +4,7 @@ const express = require('express')
 const router = express.Router()
 const bcrypt = require('bcrypt')
 
-const jwt=require("jsonwebtoken")
-const JWT_SECRET="anaesmejeanpaul123"
 const SignUpTemplateCopy = require('../models/singupModels')
-const LogInTemplateCopy = require('../models/loginModels')
 
 router.post('/signup', async (request, response) => {
 
@@ -36,6 +33,9 @@ router.post('/signup', async (request, response) => {
         response.json(error)
     })
 })
+
+
+
 
 // login
 
