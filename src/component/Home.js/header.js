@@ -6,9 +6,9 @@ import Survey from '../Survey/survey';
 
 const Header = ()=>{
     return(
-        <section className="black" >
+        <section className="black" id="home">
         <header>
-            <div className="container" id="home">
+            <div className="container" >
 
                 <div className="Harousel">
                     <MyCarousel className="carousel"/>
