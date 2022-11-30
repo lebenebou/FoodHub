@@ -2,6 +2,7 @@ import React from "react";
 import './header.css';
 import Popup from "reactjs-popup";
 import MyCarousel from "../MyCarousel/MyCarousel";
+import Survey from '../Survey/survey';
 
 const Header = ()=>{
     return(
@@ -15,7 +16,8 @@ const Header = ()=>{
                     <h2>Good Mood!</h2>
                     <p>Our Goal is to make your choices better </p>
                     <div>
-                    <button  className="headerbut"> Start Here </button>
+                    
+                    <a href="\survey"><button className="headerbut"> Start Here </button></a>
                     <Popup trigger={<button className="headerbut" id="popb"> Learn more</button>} >
                     <div className="popup"> <p id="popup">Once you click <span>"Start Here"</span> some questions should be answerd by you,So FoodHub will give you the best food based on your answers!</p></div>
                     </Popup>
