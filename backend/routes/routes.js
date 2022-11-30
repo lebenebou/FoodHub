@@ -42,18 +42,18 @@ router.post("/login", async (req, res) => {
   
     const user = await SignUpTemplateCopy.findOne({ email });
     if (!user) {
-      return res.json({ error: "User Not found" });
+      return res.json({ message: "inv em" });
     }
     if (await bcrypt.compare(password, user.password)) {
       const token = jwt.sign({ email: user.email }, JWT_SECRET);
   
       if (res.status(201)) {
-        return res.json({ status: "ok", data: token });
+        return res.json({ message: "ok", data: token });
       } else {
-        return res.json({ error: "error" });
+        return res.json({ message: "inv pass" });
       }
     }
-    res.json({message: "Invalid pass"})
+    res.json({message: "inv pass"})
 });
 
 module.exports = router

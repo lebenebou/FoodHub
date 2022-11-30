@@ -61,12 +61,21 @@ const handleLogin = e => {
       .then((data) => {
         console.log(data);
 
-        if(data.message == "User Found!"){
-          alert("User Found!");
+        if(data.message == "inv em"){
+          alert("Invalid Email");
+          return;
         }
-        else{
-          alert("Invalid Credentials");
+
+        if(data.message == "inv pass"){
+          alert("Incorrect Password");
+          return;
         }
+
+        if(data.message == "ok"){
+          alert("Welcome! You are signed in.");
+          return;
+        }
+        
 
         // if (data.status == "ok") {
         //   alert("login successful");
