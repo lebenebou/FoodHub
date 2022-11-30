@@ -44,7 +44,38 @@ function handleSubmit(event){
 
 const handleLogin = e => {
 
-  alert("f2aset login")
+  fetch("http://localhost:4000/app/login", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        email: document.getElementById("lemi").value,
+        password: document.getElementById("lpasi").value
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+
+        if(data.message == "User Found!"){
+          alert("User Found!");
+        }
+        else{
+          alert("Invalid Credentials");
+        }
+
+        // if (data.status == "ok") {
+        //   alert("login successful");
+        //   window.localStorage.setItem("token", data.data);
+        //   //window.location.href = "./userDetails";
+        // } else {
+        //   alert("login unsuccessful, try again");
+        // }
+      });
 }
 
 
