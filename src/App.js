@@ -18,9 +18,9 @@ function App() {
       <Navs/>
 
       <Routes>
-       <Route exact path="/survey" element={<Survey/>}/>
+
        <Route exact path="/" element={<Home/>}/>
-       <Route exact path="/" element={<MyCard/>}/>
+       <Route exact path="/survey" element={<Survey/>}/>
        
       </Routes>
 

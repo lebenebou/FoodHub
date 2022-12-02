@@ -101,7 +101,7 @@ const Navs=()=>{
     <Navbar  expand="lg" >
       <Container>
         <div className="logo">
-        <a href="#home">
+        <a href="/">
         {/* <img src={ logo } title='logo'/> */}
         <h1>FoodHub</h1>
         </a>

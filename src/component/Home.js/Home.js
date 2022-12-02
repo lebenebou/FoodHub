@@ -3,6 +3,7 @@ import Header from "./header";
 import './Home.css';
 import image1 from './../../image/salad.jpeg';
 import somephotos from './../../image/collage.jpeg';
+import MyCard from "../Cards/Cards";
 
 const Home =()=>{
     return(
@@ -78,6 +79,8 @@ const Home =()=>{
             
 
 </section>
+
+        <MyCard/>
 
         </Fragment>
     )

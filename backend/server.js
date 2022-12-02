@@ -13,7 +13,6 @@ const { request, response } = require('express')
 
 const client = new MongoClient("mongodb+srv://lebenebou:Zinoubre9@cluster0.6jpzmwm.mongodb.net/Food?retryWrites=true&w=majority")
 
-
 dotenv.config()
 
 mongoose.connect(process.env.DATABASE_LINK, () => {
