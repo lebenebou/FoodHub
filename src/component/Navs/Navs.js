@@ -13,6 +13,8 @@ import axios from 'axios'
 
 function handleSubmit(event){
 
+  event.preventDefault()
+
   const valid_inputs=Array.from(document.querySelectorAll("input")).filter(i=>i.value!=="");
   
   if(valid_inputs.length!==6){
@@ -22,7 +24,7 @@ function handleSubmit(event){
 
   const register_info = {
 
-    first_name: document.getElementById("fni").value ,
+    first_name: document.getElementById("fni").value,
     last_name: document.getElementById("lni").value,
     email: document.getElementById("emi").value,
     username: document.getElementById("ui").value,
@@ -37,12 +39,15 @@ function handleSubmit(event){
     }
     else{
       alert("Welcome "+document.getElementById("fni").value+", your registration is completed!");
+      window.location = "http://localhost:3000/"
     }
   }
     )
 }
 
-const handleLogin = e => {
+function handleLogin(e){
+
+  e.preventDefault()
 
   fetch("http://localhost:4000/app/login", {
       method: "POST",
@@ -62,17 +67,18 @@ const handleLogin = e => {
         console.log(data);
 
         if(data.message == "inv em"){
-          alert("Invalid Email");
+          alert("This email isn't linked to a FoodHub account.");
           return;
         }
 
         if(data.message == "inv pass"){
-          alert("Incorrect Password");
+          alert("This password is incorrect, please try again.");
           return;
         }
 
         if(data.message == "ok"){
-          alert("Welcome! You are signed in.");
+          alert("Welcome! You are now logged in.");
+          window.location = "http://localhost:3000/"
           return;
         }
         

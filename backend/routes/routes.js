@@ -23,10 +23,10 @@ router.post('/signup', async (request, response) => {
         password: hashed_pass
     })
 
-    const oldUser=await signed_up_user.findOne({email});
-    if(oldUser){
-        return response.send({error:"User exist"});
-    }
+    // const oldUser = await SignUpTemplateCopy.findOne({email});
+    // if(oldUser){
+    //     return response.send({error:"User exist"});
+    // }
 
     signed_up_user.save()
     .then(data => {
