@@ -48,7 +48,7 @@ router.post("/login", async (req, res) => {
       const token = jwt.sign({ email: user.email }, JWT_SECRET);
   
       if (res.status(201)) {
-        return res.json({ message: "ok", data: token });
+        return res.json({ message: "ok", fn: user.first_name });
       } else {
         return res.json({ message: "inv pass" });
       }

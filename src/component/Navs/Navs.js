@@ -77,7 +77,7 @@ function handleLogin(e){
         }
 
         if(data.message == "ok"){
-          alert("Welcome! You are now logged in.");
+          alert("Welcome " +data.fn+"! You are now logged in.");
           window.location = "http://localhost:3000/"
           return;
         }
