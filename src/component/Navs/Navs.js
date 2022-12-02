@@ -93,7 +93,7 @@ function handleLogin(e){
       });
 }
 
-function HandleSearch(e){
+function handleSearch(e){
 
   const input = document.getElementById("search_input")
   
@@ -102,7 +102,6 @@ function HandleSearch(e){
   e.preventDefault()
   window.location = "/suggestion"
 }
-
 
 const Navs=()=>{
     return(
@@ -121,23 +120,8 @@ const Navs=()=>{
           <Nav className="ml-auto"> 
             <Nav.Link href="/" > Home </Nav.Link>
             <Nav.Link href="#footer">About Us</Nav.Link>
-            <NavDropdown  title="Get Started" id="collasible-nav-dropdown">
-            
-            <Popup  trigger={ <NavDropdown.Item  href="#action/3.1">Log in</NavDropdown.Item>}>
-            <div className="popSign" id='log'> 
-                    <h1 className="h1s">Your Info</h1>
-                      <form onSubmit={handleLogin} >
-                        <input className="input-box" id="lemi" type="email" placeholder='Email' unique />
-                        <br/>
-                        <input className="input-box" id="lpasi" type="password" placeholder='Password'/>
-                        <br/>
-                        
-                        <input className="signup-btn" type="submit" value="Register"/>
-                        </form>
-                    </div>
-            </Popup>
-              
-              <Popup  trigger={<NavDropdown.Item  href="#action/3.2">Sign up</NavDropdown.Item>} >
+
+            <Popup  trigger={<Nav.Link href="#">Sign Up</Nav.Link>} >
                     <div className="popSign"> 
                     <h1 className="h1s">Your Info</h1>
                       <form onSubmit={handleSubmit} >
@@ -156,27 +140,27 @@ const Navs=()=>{
                         </form>
                     </div>
                     </Popup>
-              
+            <Popup  trigger={ <Nav.Link href="#">Log In</Nav.Link>}>
+            <div className="popSign" id='log'> 
+                    <h1 className="h1s">Your Info</h1>
+                      <form onSubmit={handleLogin} >
+                        <input className="input-box" id="lemi" type="email" placeholder='Email' unique />
+                        <br/>
+                        <input className="input-box" id="lpasi" type="password" placeholder='Password'/>
+                        <br/>
+                        
+                        <input className="signup-btn" type="submit" value="Register"/>
+                        </form>
+                    </div>
+            </Popup>
 
-              <NavDropdown.Divider  />
-              <NavDropdown.Item  href="#action/3.4">Delete your account</NavDropdown.Item>
-            
-            </NavDropdown>
-            {/* <NavDropdown  title="Country" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Log in</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Sign up</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Delete your account</NavDropdown.Item>
-            </NavDropdown> */}
             </Nav>
             
-            <Nav>
-              <input id="search_input" type="search"  placeholder="What Are You Craving?"/>
-            
-          </Nav>
-              <a href='/suggestion'></a>
-          <Nav>
-            <Nav.Link id='lastnav' onClick={HandleSearch}>
+            <Nav className='searchdiv'>
+              <input type="search" id='search_input' className='searchin' placeholder="What Are You Craving?"/>
+              </Nav>
+              <Nav>
+            <Nav.Link id='lastnav' onClick={handleSearch}>
             
             </Nav.Link>
                   </Nav>

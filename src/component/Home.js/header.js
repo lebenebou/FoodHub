@@ -15,7 +15,7 @@ const Header = ()=>{
                     <h2>Good Food </h2>
                     <h2>Good Mood!</h2>
                     <p>Our Goal is to make your choices better </p>
-                    <div>
+                    <div id="tbut">
                     
                     <a href="\survey"><button className="headerbut"> Start Here </button></a>
                     <Popup trigger={<button className="headerbut" id="popb"> Learn more</button>} >

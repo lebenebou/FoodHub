@@ -57,3 +57,10 @@
     border-radius: 20px;
     transform: rotateX(180deg);
   }
+
+  @media screen and (max-width:990px){/*for brkpts*/
+    .flip-box{
+       margin-left: 20%;
+   }
+   
+}

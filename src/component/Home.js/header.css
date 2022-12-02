@@ -93,3 +93,11 @@ header p{
     background-color: #d6b12a;
     color: black;
 }
+
+
+@media screen and (max-width:990px){/*for brkpts*/
+     #popb{
+        margin-left: 36%;
+    }
+    
+}

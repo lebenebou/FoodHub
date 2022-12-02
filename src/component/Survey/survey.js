@@ -33,7 +33,7 @@ const Survey = ()=>{
             <h5 className="fw-bold">I am a:</h5>
             <MDBRadio
               name="diet"
-              onChange={e => isVegan = true}
+              onClick={e => isVegan = true}
               id="flexRadioDefault"
               label="Vegetarian"
               value="Vegetarian"
@@ -41,14 +41,14 @@ const Survey = ()=>{
             />
             <MDBRadio
               name="diet"
-              onChange={e => isVegan = true}
+              onClick={e => isVegan = true}
               id="flexRadioDefault2"
               label="Vegan"
               value="Vegan"
             />
             <MDBRadio
               name="diet"
-              onChange={e => isVegan = false}
+              onClick={e => isVegan = false}
               id="flexRadioDefault3"
               label="None"
               value="None"

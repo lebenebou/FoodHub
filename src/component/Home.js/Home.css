@@ -39,6 +39,7 @@
     width:350px;
     max-width: 100%;
     border-radius: 10px;
+    opacity: 0.7;
 }
 
 .info h2{
@@ -113,6 +114,7 @@
     width:350px;
     max-width: 100%;
     border-radius: 10px;
+    opacity: 0.7;
 }
 
 .ingredients p{
@@ -149,6 +151,14 @@
 
 .pad{
     margin-bottom: 20px;
+}
+
+@media screen and (max-width:990px){/*for brkpts*/
+    #somephotos{
+       margin-left: -0.5%;
+       margin-bottom: 1%;
+   }
+   
 }
 
 

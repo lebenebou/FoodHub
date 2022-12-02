@@ -13,48 +13,52 @@ function MyCarousel() {
     <Carousel>
       <Carousel.Item>
         <img
+          id="caro"
           className="d-block "
           src={pic}
           alt="First slide"
         />
         <Carousel.Caption>
-          <p id="carousel">One Burger Won’t Make You Fat!</p>
+          {/* <p id="carousel">One Burger Won’t Make You Fat!</p> */}
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
+        <img 
+          id="caro"
           className="d-block "
           src={pic2}
           alt="Third slide"
         />
 
         <Carousel.Caption>
-        <p id="carousel">The Diet Starts On Monday</p>
+        {/* <p id="carousel">The Diet Starts On Monday</p> */}
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
         <img
+          id="caro"
           className="d-block "
           src={pic3}
           alt="Third slide"
         />
 
         <Carousel.Caption>
-        <p id="carousel">Say Yes To Food!</p>
+        {/* <p id="carousel">Say Yes To Food!</p> */}
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
         <img
+          id="caro"
           className="d-block "
           src={pic4}
           alt="Third slide"
         />
 
         <Carousel.Caption>
-        <p id="carousel">Why Not!</p>
+        {/* <p id="carousel">Why Not!</p> */}
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

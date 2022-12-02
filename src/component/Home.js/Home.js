@@ -1,9 +1,13 @@
 import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Header from "./header";
 import './Home.css';
 import image1 from './../../image/salad.jpeg';
 import somephotos from './../../image/collage.jpeg';
 import MyCard from "../Cards/Cards";
+
+
+
 
 const Home =()=>{
     return(
@@ -76,12 +80,9 @@ const Home =()=>{
                     </div>
                 </div>
             </section>
-            
 
 </section>
-
-        <MyCard/>
-
+            <MyCard/>
         </Fragment>
     )
 }

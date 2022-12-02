@@ -1,0 +1,29 @@
+.blacksurv{
+    background-color: black;
+}
+label{
+    color: #f3bf00;
+}
+#surv{
+    font-weight: 700;
+    color: #f3bf00;
+    text-align: center;
+}
+h5{
+    font-weight: 700;
+    color: #f3bf00;
+}
+.sub{
+    margin-top: 3%;
+    margin-left: 43%;
+    background-color: #ffd900;
+    color:black;
+    border-radius: 20px;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width:990px){/*for brkpts*/
+    .sub{
+        margin-left: -10%;
+    }
+}
