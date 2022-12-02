@@ -1,5 +1,6 @@
 
 import React from "react";
+import './survey.css'
 import { MDBBtn, MDBCol, MDBContainer, MDBRadio, MDBRow } from "mdb-react-ui-kit";
 import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 
@@ -8,11 +9,13 @@ function HandleSurveyAnswers(event){
   event.preventDefault();
 
   if(isVegan){
-    alert("Vegan ya ayre?")
+    localStorage.setItem("search_term", "vegan")
+    window.location = "/suggestion"
 
   }
   else{
-    alert("Tabi3e")
+    localStorage.setItem("search_term", "chicken")
+    window.location = "/suggestion"
   }
 }
 
@@ -21,11 +24,13 @@ let isVegan = false;
 const Survey = ()=>{
 
     return(
-        <MDBContainer>
+          <div className="blacksurv">
+      <MDBContainer>
+        <h1 id="surv">Tell Us About You</h1>
       <MDBRow className="justify-content-center">
         <MDBCol size="5">
-          <form className="bg-white mt-3" action="" onSubmit={HandleSurveyAnswers}>
-            <p className="fw-bold">I am a:</p>
+          <form className="bg-black mt-3" action="" onSubmit={HandleSurveyAnswers}>
+            <h5 className="fw-bold">I am a:</h5>
             <MDBRadio
               name="diet"
               onChange={e => isVegan = true}
@@ -50,7 +55,7 @@ const Survey = ()=>{
             />
 
             <br/>
-            <p className="fw-bold">I usually prefer:</p>
+            <h5 className="fw-bold">I usually prefer:</h5>
             <MDBRadio
               name="calory_intake"
               onChange={e => console.log(e.target.value)}
@@ -75,7 +80,7 @@ const Survey = ()=>{
             />
 
             <br/>
-            <p className="fw-bold">Are you lactose intolerant?</p>
+            <h5 className="fw-bold">Are you lactose intolerant?</h5>
             <MDBRadio
               name="lactose_int"
               onChange={e => console.log(e.target.value)}
@@ -91,14 +96,42 @@ const Survey = ()=>{
               label="Yes"
               value="yes"
             />
-            
-          <input className="signup-btn" type="submit" value="Submit Answers"/>
+
+          <br/>
+          <h5 className="fw-bold">Do you usually order home or eat out?</h5>
+            <MDBRadio
+              name="place"
+              onChange={e => console.log(e.target.value)}
+              id="flexRadioDefault1"
+              label="I prefer delivery"
+              value="home"
+              defaultChecked
+            />
+            <MDBRadio
+              name="place"
+              onChange={e => console.log(e.target.value)}
+              id="flexRadioDefault2"
+              label="I like to eat out"
+              value="out"
+            />
+            <MDBRadio
+              name="place"
+              onChange={e => console.log(e.target.value)}
+              id="flexRadioDefault3"
+              label="I'm fine with both"
+              value="both"
+            />
+
+          <br/>
+          <input className="sub" type="submit" value="Submit Answers"/>
           </form>
           <div className="text-end">
           </div>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
+      </div>
+    
 )
 }
 export default Survey;

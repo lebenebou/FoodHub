@@ -1,68 +1,141 @@
-import React from "react";
-import './Footer.css';
+import React from 'react';
+import './Footer.css'
 import instagram from './../../image/instagram.png';
 import facebook from './../../image/facebook.png';
 import linkedin from './../../image/linkedin.png';
 import twitter from './../../image/twitter.png';
 
-const Footer =()=>{
-    return(
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBIcon,
+  MDBInput,
+  MDBCol,
+  MDBRow,
+  MDBBtn
+} from 'mdb-react-ui-kit';
+
+export default function App() {
+  return (
+    <MDBFooter className='text-center' >
+      <MDBContainer className='p-4'>
+        <section className='mb-4'>
+          <MDBBtn outline color="yellow" floating className='m-1' href='/' role='button'>
+            <img src={instagram}/>
+          </MDBBtn>
+
+          <MDBBtn outline color='yellow' floating className='m-1' href='/' role='button'>
+          <img src={facebook}/>
+          </MDBBtn>
+
+          <MDBBtn outline color="yellow" floating className='m-1' href='/' role='button'>
+          <img src={twitter}/>
+          </MDBBtn>
+
+          <MDBBtn outline color="yellow" floating className='m-1' href='/' role='button'>
+          <img src={linkedin}/>
+          </MDBBtn>
+
+        </section>
 
         
-        <div className="Footer" id="footer">
-            <div className="container">
-                <div className="row">
+        <section className=''>
+          <form action=''>
+            <MDBRow className='d-flex justify-content-center'>
+              <MDBCol size="auto">
+                <p className='pt-2'>
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </MDBCol>
 
-                     {/*for 1st col*/}
-                     <div className="col">
-                        <h4>FoodHub</h4>
-                        <ul className="list-unstyled">
-                            <li>About us</li>
-                            <li>Blog</li>
-                            <li>Stories</li>
-                            <li>News</li>
-                            <li>Careers</li>
-                        </ul>
-                    </div>
+              <MDBCol md='5' start>
+                <MDBInput contrast type='email' placeholder='Email address' className='mb-4' />
+              </MDBCol>
 
-                    {/*for 2nd col*/}
-                    <div className="col">
-                        <h4>FoodHub</h4>
-                        <ul className="list-unstyled">
+              <MDBCol size="auto">
+                <button  type='submit' className='mb-4'>
+                  Subscribe
+                </button>
+              </MDBCol>
+            </MDBRow>
+          </form>
+        </section>
+
+       
+
+        <section className=''>
+          <MDBRow>
+            <MDBCol lg='4' md='6' className='mb-4 mb-md-0'>
+              <h5 className='text-uppercase'>FoodHub</h5>
+
+              <ul className='list-unstyled mb-0'>
+                <li>
+                  <a href='#!' >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' >
+                  Blog
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' >
+                  Stories
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' >
+                  News
+                  </a>
+                </li>
+              </ul>
+            </MDBCol>
+
+            <MDBCol lg='4' md='6' className='mb-4 mb-md-0'>
+              <h5 className='text-uppercase'>Address</h5>
+
+              <ul className='list-unstyled mb-0'>
                             <li>+961 xx xxx xxx</li>
                             <li>Mansourieh,Lebanon</li>
                             <li>Campus des sciences et technologies</li>
-                        </ul>
-                    </div>
-                    {/*for 3rd col*/}
-                    <div className="col">
-                        <h4>Learn More</h4>
-                        <ul className="list-unstyled">
-                            <li>Support</li>
-                            <li>Developers</li>
-                            <li>FAQ</li>
-                        </ul>
-                    </div>
-                    {/*for 4th col*/}
-                    <div className="col">
-                        <h4>Connect Us</h4>
-                        <ul className="list-unstyled">
-                            <li><a href="https://www.instagram.com/foodhub_lb/"><img src={instagram} width="35px" height="35px" /></a></li>
-                            <li><a href="#"><img src={facebook} width="35px" height="35px"/></a></li>
-                            <li><a href="#"><img src={twitter} width="35px" height="35px"/></a></li>
-                            <li><a href="#"><img src={linkedin} width="35px" height="35px"/></a></li>
-                            
-                        </ul>
-                    </div>
-                   
+                            </ul>
+            </MDBCol>
 
-                </div>
-                </div>
-                <div className="copy">
-        <p>Copyright © 2022 J_Y,All rights reserved</p>
-    </div>
-            </div>
+            <MDBCol lg='4' md='6' className='mb-4 mb-md-0'>
+              <h5 className='text-uppercase'>join our team</h5>
+
+              <ul className='list-unstyled mb-0'>
+                <li>
+                  <a href='#!' >
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' >
+                    Requirments
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' >
+                    Upload your resume
+                  </a>
+                </li>
+                
+              </ul>
+            </MDBCol>
+
+           
+          </MDBRow>
+        </section>
+      </MDBContainer>
+
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        © 2022 Copyright:
         
-    )
+          J_Y
+        
+      </div>
+    </MDBFooter>
+  );
 }
-export default Footer;

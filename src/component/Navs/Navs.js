@@ -93,6 +93,16 @@ function handleLogin(e){
       });
 }
 
+function HandleSearch(e){
+
+  const input = document.getElementById("search_input")
+  
+  localStorage.setItem("search_term", input.value)
+
+  e.preventDefault()
+  window.location = "/suggestion"
+}
+
 
 const Navs=()=>{
     return(
@@ -161,12 +171,12 @@ const Navs=()=>{
             </Nav>
             
             <Nav>
-              <input type="search"  placeholder="What Are You Craving?"/>
+              <input id="search_input" type="search"  placeholder="What Are You Craving?"/>
             
           </Nav>
               <a href='/suggestion'></a>
           <Nav>
-            <Nav.Link id='lastnav' href='/suggestion'>
+            <Nav.Link id='lastnav' onClick={HandleSearch}>
             
             </Nav.Link>
                   </Nav>
