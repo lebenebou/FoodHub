@@ -96,6 +96,11 @@ function handleLogin(e){
 function handleSearch(e){
 
   const input = document.getElementById("search_input")
+
+  if(input.value == ""){
+    alert("You didn't type anything!")
+    return;
+  }
   
   localStorage.setItem("search_term", input.value)
 

@@ -1,0 +1,32 @@
+
+.maindiv {
+
+    background-color: black;
+    padding-bottom: 40px;
+    /* height: 500px; */
+    
+}
+
+.maindiv a{
+
+    color: #f3bf00 !important;
+    margin-left: 97px;
+}
+
+.maindiv h1{
+
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.maindiv li {
+    
+    color:white;
+    margin-left: 75px;
+    margin-top: 50px;
+}
+
+#maintext{
+
+    color: #f3bf00;
+}

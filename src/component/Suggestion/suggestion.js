@@ -1,5 +1,6 @@
 
 import React from "react";
+import "./suggestion.css"
 
 function getHTMLString(term){
 
@@ -15,11 +16,23 @@ function getHTMLString(term){
 
             const name = data[i]["name"]
             const restaurant = data[i]["resName"]
+            const itemLink = data[i]["link"]
 
-            var div = document.createElement("div");
-            div.innerHTML = "Item: " + name + " (From " + restaurant +")"
-            container.appendChild(div)
+            var linebreak = document.createElement("br")
+
+            var li = document.createElement("li");
+            var a = document.createElement("a")
+            a.href = itemLink
+            a.innerHTML = "Order it here"
+            a.target = "_blank"
+            li.innerHTML = name + " (From " + restaurant +")"
+            container.appendChild(li)
+            container.appendChild(a)
+            container.appendChild(linebreak)
+            container.appendChild(linebreak)
+            container.appendChild(linebreak)
         }
+
     })
 }
 
@@ -29,9 +42,10 @@ const Suggestion = () => {
     getHTMLString(searchTerm)
 
     return(
-        <div>
-            <h1>We think you might like:</h1>
-            <div id="maindiv"></div>
+        <div id="maindiv" className="maindiv">
+            <h1 id="maintext">We think you might like:</h1>
+            <br/>
+
 
         </div>
 )

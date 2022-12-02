@@ -17,6 +17,8 @@ import {
 
 export default function App() {
   return (
+
+    <section id='footer'>
     <MDBFooter className='text-center' >
       <MDBContainer className='p-4'>
         <section className='mb-4'>
@@ -137,5 +139,6 @@ export default function App() {
         
       </div>
     </MDBFooter>
+    </section>
   );
 }
