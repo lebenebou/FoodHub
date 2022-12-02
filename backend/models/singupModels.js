@@ -28,6 +28,11 @@ const SignUpTemplate = new mongoose.Schema({
         required:true
     },
 
+    isVegan:{
+        type:Boolean,
+        default:null
+    },
+
     date:{
         type:Date,
         default: Date.now
