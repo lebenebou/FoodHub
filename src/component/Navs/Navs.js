@@ -97,7 +97,7 @@ function handleLogin(e){
 const Navs=()=>{
     return(
       
-<nav class="cusSticky" > 
+<nav className="cusSticky" > 
     <Navbar  expand="lg" >
       <Container>
         <div className="logo">
@@ -160,11 +160,15 @@ const Navs=()=>{
             </NavDropdown> */}
             </Nav>
             
-            <Nav >
-            <input type="search"  placeholder="What Are You Craving?"/>
+            <Nav>
+              <input type="search"  placeholder="What Are You Craving?"/>
+            
           </Nav>
+              <a href='/suggestion'></a>
           <Nav>
-            <Nav.Link id='lastnav'></Nav.Link>
+            <Nav.Link id='lastnav' href='/suggestion'>
+            
+            </Nav.Link>
                   </Nav>
           
           

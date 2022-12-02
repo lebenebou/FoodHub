@@ -6,7 +6,7 @@ import Navs from './component/Navs/Navs';
 import { Fragment } from 'react';
 import Footer from './component/Footer/Footer';
 import Survey from './component/Survey/survey';
-import MyCard from './component/Cards/Cards';
+import Suggestion from './component/Suggestion/suggestion';
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
 
        <Route exact path="/" element={<Home/>}/>
        <Route exact path="/survey" element={<Survey/>}/>
+       <Route exact path="/suggestion" element={<Suggestion/>}/>
        
       </Routes>
 

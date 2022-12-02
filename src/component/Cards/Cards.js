@@ -17,14 +17,14 @@ const MyCard =()=>{
         <div className='container'>
         <div className='row'>
          <div className='col-md-4'>
-        <div class="flip-box">
-            <div class="flip-box-inner">
-                <div class="flip-box-front">
+        <div className="flip-box">
+            <div className="flip-box-inner">
+                <div className="flip-box-front">
                     <img src={im1} width="250px" height="200px"/>
                     
                 </div>
 
-                <div class="flip-box-back">
+                <div className="flip-box-back">
                     <h4>Did You Know?</h4>
                     <p>Scientists can turn peanut butter into diamonds.</p>
                 </div>
@@ -34,14 +34,14 @@ const MyCard =()=>{
     </div>
     
     <div className='col-md-4'>
-        <div class="flip-box">
-            <div class="flip-box-inner">
-                <div class="flip-box-front">
+        <div className="flip-box">
+            <div className="flip-box-inner">
+                <div className="flip-box-front">
                 <img src={im3} width="250px" height="200px"/>
 
                 </div>
 
-                <div class="flip-box-back">
+                <div className="flip-box-back">
                     <h4>Did You Know?</h4>
                     <p>Potatoes can absorb and reflect Wi-fi signals.</p>
                 </div>
@@ -51,13 +51,13 @@ const MyCard =()=>{
     </div>
     
     <div className='col-md-4'>
-                <div class="flip-box">
-            <div class="flip-box-inner">
-                <div class="flip-box-front">
+                <div className="flip-box">
+            <div className="flip-box-inner">
+                <div className="flip-box-front">
                 <img src={im2} width="300px" height="200px"  />
                 </div>
 
-                <div class="flip-box-back">
+                <div className="flip-box-back">
                     <h4>Did You Know?</h4>
                     <p>Farm-raised salmon is naturally white and then dyed pink.</p>
                 </div>

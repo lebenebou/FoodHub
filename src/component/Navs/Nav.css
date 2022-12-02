@@ -49,8 +49,7 @@ nav #lastnav{
     box-sizing: border-box;
     color: white !important;
     font-size:100%;
-    margin-left: 10px;    
-    
+    margin-left: -40px;
 }
 .logo{
     text-align: right;
