@@ -140,7 +140,7 @@ const Navs=()=>{
                         <br/>
                         <input className="input-box" id="emi" type="email" placeholder='Email' unique />
                         <br/>
-                        <input className="input-box" id="ui" type="text" placeholder='username'/>
+                        <input className="input-box" id="ui" type="text" placeholder='Username'/>
                         <br/>
                         <input className="input-box" id="pasi" type="password" placeholder='Password'/>
                         <br/>
