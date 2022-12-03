@@ -95,6 +95,10 @@ function handleLogin(e){
 
 function handleSearch(e){
 
+  if(e.key !== "Enter"){
+    return;
+  }
+
   const input = document.getElementById("search_input")
 
   if(input.value == ""){
@@ -162,7 +166,7 @@ const Navs=()=>{
             </Nav>
             
             <Nav className='searchdiv'>
-              <input type="search" id='search_input' className='searchin' placeholder="What Are You Craving?"/>
+              <input type="search" onKeyUp={handleSearch} id='search_input' className='searchin' placeholder="What Are You Craving?"/>
               </Nav>
               <Nav>
             <Nav.Link id='lastnav' onClick={handleSearch}>

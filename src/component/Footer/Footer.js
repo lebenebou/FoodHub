@@ -55,7 +55,7 @@ export default function App() {
               </MDBCol>
 
               <MDBCol size="auto">
-                <button  type='submit' className='mb-4'>
+                <button id='subscribe' type='submit' className='mb-4'>
                   Subscribe
                 </button>
               </MDBCol>

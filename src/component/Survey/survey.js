@@ -9,17 +9,30 @@ function HandleSurveyAnswers(event){
   event.preventDefault();
 
   if(isVegan){
-    localStorage.setItem("search_term", "vegan")
-    window.location = "/suggestion"
 
-  }
-  else{
-    localStorage.setItem("search_term", "chicken")
+    let term = "";
+    if(lowCalory) term = "green"
+    else term = "vegan green"
+
+    localStorage.setItem("search_term", term)
     window.location = "/suggestion"
+    return;
   }
+
+  if(lowCalory){
+    localStorage.setItem("search_term", "salad")
+    window.location = "/suggestion"
+    return;
+  }
+
+  localStorage.setItem("search_term", "chicken")
+  window.location = "/suggestion"
+  return;
+
 }
 
 let isVegan = false;
+let lowCalory = false;
 
 const Survey = ()=>{
 
@@ -58,7 +71,7 @@ const Survey = ()=>{
             <h5 className="fw-bold">I usually prefer:</h5>
             <MDBRadio
               name="calory_intake"
-              onChange={e => console.log(e.target.value)}
+              onClick={e => lowCalory = true}
               id="flexRadioDefault1"
               label="Low Calory Foods"
               value="low"
@@ -66,14 +79,14 @@ const Survey = ()=>{
             />
             <MDBRadio
               name="calory_intake"
-              onChange={e => console.log(e.target.value)}
+              onClick={e => lowCalory = false}
               id="flexRadioDefault2"
               label="High Calory Foods"
               value="high"
             />
             <MDBRadio
               name="calory_intake"
-              onChange={e => console.log(e.target.value)}
+              onClick={e => lowCalory = false}
               id="flexRadioDefault3"
               label="Both"
               value="medium"
