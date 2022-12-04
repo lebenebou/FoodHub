@@ -39,13 +39,11 @@ function getHTMLString(term){
 
             container.appendChild(li)
             container.appendChild(a1)
-            container.appendChild(linebreak)
             container.appendChild(a2)
             container.appendChild(linebreak)
             container.appendChild(linebreak)
             container.appendChild(linebreak)
         }
-
     })
 }
 

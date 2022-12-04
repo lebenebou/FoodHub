@@ -25,10 +25,9 @@ function HandleSurveyAnswers(event){
     return;
   }
 
-  localStorage.setItem("search_term", "chicken")
+  localStorage.setItem("search_term", "chicken green")
   window.location = "/suggestion"
   return;
-
 }
 
 let isVegan = false;

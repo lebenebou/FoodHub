@@ -6,7 +6,6 @@ const bcrypt = require('bcrypt')
 const jwt = require("jsonwebtoken")
 const JWT_SECRET = "hvdvay6ert72839289()aiyg8t87qt72393293883uhefiuh78ttq3ifi78272jbkj?[]]pou89ywe";
 
-
 const SignUpTemplateCopy = require('../models/singupModels')
 
 router.post('/signup', async (request, response) => {
