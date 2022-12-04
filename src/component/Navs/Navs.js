@@ -95,7 +95,7 @@ function handleLogin(e){
 
 function handleSearch(e){
 
-  if(e.key !== "Enter"){
+  if(e.key !== "Enter" && e.button != 0){
     return;
   }
 
