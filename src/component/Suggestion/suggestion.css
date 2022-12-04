@@ -7,10 +7,16 @@
     
 }
 
-.maindiv a{
+#a1{
 
     color: #f3bf00 !important;
     margin-left: 97px;
+}
+
+#a2{
+
+    color: #f3bf00 !important;
+    margin-left: 20px;
 }
 
 .maindiv h1{

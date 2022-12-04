@@ -19,7 +19,7 @@ const Header = ()=>{
                     
                     <a href="\survey"><button className="headerbut"> Start Here </button></a>
                     <Popup trigger={<button className="headerbut" id="popb"> Learn more</button>} >
-                    <div className="popup"> <p id="popup">Once you click <span>"Start Here"</span> some questions should be answerd by you,So FoodHub will give you the best food based on your answers!</p></div>
+                    <div className="popup"> <p id="popup">Once you click <span>"Start Here"</span> you will be given a survey, FoodHub will then start to give you recommendations based on your answers!</p></div>
                     </Popup>
                     </div>
                 </div>

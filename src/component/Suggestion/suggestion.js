@@ -17,17 +17,30 @@ function getHTMLString(term){
             const name = data[i]["name"]
             const restaurant = data[i]["resName"]
             const itemLink = data[i]["link"]
+            const locationLink = data[i]["location"]
 
             var linebreak = document.createElement("br")
-
+            
             var li = document.createElement("li");
-            var a = document.createElement("a")
-            a.href = itemLink
-            a.innerHTML = "Order it here"
-            a.target = "_blank"
             li.innerHTML = name + " (From " + restaurant +")"
+
+            var a1 = document.createElement("a")
+            a1.id = "a1"
+            a1.href = itemLink
+            a1.innerHTML = "Order it here"
+            a1.target = "_blank"
+            
+            var a2 = document.createElement("a")
+            a2.id = "a2"
+            a2.href = locationLink
+            a2.innerHTML = "Take me there"
+            a2.target = "_blank"
+
+
             container.appendChild(li)
-            container.appendChild(a)
+            container.appendChild(a1)
+            container.appendChild(linebreak)
+            container.appendChild(a2)
             container.appendChild(linebreak)
             container.appendChild(linebreak)
             container.appendChild(linebreak)
