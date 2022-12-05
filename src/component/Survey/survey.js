@@ -49,7 +49,6 @@ const Survey = ()=>{
               id="flexRadioDefault"
               label="Vegetarian"
               value="Vegetarian"
-              defaultChecked
             />
             <MDBRadio
               name="diet"
@@ -64,6 +63,7 @@ const Survey = ()=>{
               id="flexRadioDefault3"
               label="None"
               value="None"
+              defaultChecked
             />
 
             <br/>
@@ -74,7 +74,6 @@ const Survey = ()=>{
               id="flexRadioDefault1"
               label="Low Calory Foods"
               value="low"
-              defaultChecked
             />
             <MDBRadio
               name="calory_intake"
@@ -89,6 +88,7 @@ const Survey = ()=>{
               id="flexRadioDefault3"
               label="Both"
               value="medium"
+              defaultChecked
             />
 
             <br/>
@@ -117,7 +117,6 @@ const Survey = ()=>{
               id="flexRadioDefault1"
               label="I prefer delivery"
               value="home"
-              defaultChecked
             />
             <MDBRadio
               name="place"
@@ -132,6 +131,7 @@ const Survey = ()=>{
               id="flexRadioDefault3"
               label="I'm fine with both"
               value="both"
+              defaultChecked
             />
 
           <br/>

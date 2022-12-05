@@ -9,8 +9,22 @@ function getHTMLString(term){
     fetch(link)
     .then(res => res.json())
     .then(data => {
-
+        
+        var h1 = document.getElementById("maintext")
         var container = document.getElementById("maindiv")
+
+        if(data.length == 0){
+
+            h1.innerHTML = "We couldn't find anything :("
+            var h3 = document.createElement("h3")
+            h3.innerHTML = "Try broadening your search"
+            container.appendChild(h3)
+            return;
+        }
+        else{
+            h1.innerHTML = "We think you might like:"
+        }
+
 
         for(let i=0; i<data.length; i++){
 
